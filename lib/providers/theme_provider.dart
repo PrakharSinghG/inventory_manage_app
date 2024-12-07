@@ -16,8 +16,8 @@ class ThemeProvider extends ChangeNotifier {
     brightness: Brightness.light,
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.grey[200],
-    appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.blue,
+    appBarTheme: AppBarTheme(
+      backgroundColor: Colors.deepPurple[300],
       foregroundColor: Colors.white,
     ),
     textTheme: const TextTheme(
@@ -32,7 +32,7 @@ class ThemeProvider extends ChangeNotifier {
     primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.grey[900],
     appBarTheme: const AppBarTheme(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.deepPurple,
       foregroundColor: Colors.white,
     ),
     textTheme: const TextTheme(

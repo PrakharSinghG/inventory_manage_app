@@ -98,8 +98,8 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   decoration: BoxDecoration(
                     color: lowStock
                         ? (themeProvider.isDarkMode
-                            ? Colors.red[900]
-                            : Colors.red[50])
+                            ? Colors.redAccent[400]
+                            : Colors.red[100])
                         : Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(12.0),
                     boxShadow: [
@@ -147,30 +147,42 @@ class _ProductListScreenState extends State<ProductListScreen> {
                               "SKU: ${product.sku}",
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .color,
+                                color: lowStock
+                                    ? (themeProvider.isDarkMode
+                                        ? Colors.white
+                                        : Colors.black)
+                                    : Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .color,
                               ),
                             ),
                             Text(
                               "Price: \$${product.price.toStringAsFixed(2)}",
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .color,
+                                color: lowStock
+                                    ? (themeProvider.isDarkMode
+                                        ? Colors.white
+                                        : Colors.black)
+                                    : Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .color,
                               ),
                             ),
                             Text(
                               "Quantity: ${product.quantity}",
                               style: TextStyle(
                                 fontSize: 12,
-                                color: Theme.of(context)
-                                    .textTheme
-                                    .bodyMedium!
-                                    .color,
+                                color: lowStock
+                                    ? (themeProvider.isDarkMode
+                                        ? Colors.white
+                                        : Colors.black)
+                                    : Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .color,
                               ),
                             ),
                           ],
